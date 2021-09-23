@@ -14,7 +14,23 @@ import {
     Typography
 } from '@mui/material'
 import { ListItemTextExtended, ListItemSecondaryActionExtended } from 'mui-listitem-extended'
-import { ChevronRight, Folder, Language, Map, PlayCircle, FontDownloadOutlined, VolumeUpOutlined, VolumeUp, Payment, RoomOutlined, LockOutlined, AddShoppingCart, BrightnessMediumOutlined, CakeOutlined } from '@mui/icons-material';
+import { 
+    ChevronRight, 
+    Folder, 
+    Language, 
+    Map, 
+    PlayCircle, 
+    FontDownloadOutlined, 
+    VolumeUpOutlined, 
+    VolumeUp, 
+    Payment, 
+    RoomOutlined, 
+    LockOutlined, 
+    AddShoppingCart, 
+    BrightnessMediumOutlined, 
+    CakeOutlined, 
+    Phone, 
+    ChatBubble } from '@mui/icons-material';
 import { useTheme } from '@mui/material/styles';
 
 import pixel5a from '../../assets/pixel5a.jpg'
@@ -28,7 +44,6 @@ const ListItemsScreen = () => {
     return (
         <Box>
             <List>
-
                 {/* Volume list item */}
                 <ListItem>
                     <ListItemIcon>
@@ -115,6 +130,25 @@ const ListItemsScreen = () => {
                     <ListItemSecondaryActionExtended>
                         <IconButton>
                             <ChevronRight />
+                        </IconButton>
+                    </ListItemSecondaryActionExtended>
+                </ListItem>
+                <Divider />
+                <ListItem>
+                    <ListItemAvatar>
+                        <Avatar alt="Franklin" src={jessica}/>
+                    </ListItemAvatar>
+                    <ListItemTextExtended 
+                        overline="manager" 
+                        overlineTypographyProps={{color: `${theme.palette.primary.main}`}} 
+                        primary="Franklin Martinez" 
+                        secondary="(555) 521-5554" />
+                    <ListItemSecondaryActionExtended>
+                        <IconButton>
+                            <Phone color="primary"/>
+                        </IconButton>
+                        <IconButton>
+                            <ChatBubble color="primary"/>
                         </IconButton>
                     </ListItemSecondaryActionExtended>
                 </ListItem>
