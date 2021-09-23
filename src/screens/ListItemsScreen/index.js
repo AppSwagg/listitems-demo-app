@@ -18,6 +18,10 @@ import { ChevronRight, Folder, Language, Map, PlayCircle, FontDownloadOutlined, 
 import { useTheme } from '@mui/material/styles';
 
 import pixel5a from '../../assets/pixel5a.jpg'
+import marcel from '../../assets/marcel.jpg'
+import jessica from '../../assets/jessica.jpg'
+import chernobyl from '../../assets/chernobyl.jpg'
+
 
 const ListItemsScreen = () => {
     const theme = useTheme()
@@ -71,7 +75,7 @@ const ListItemsScreen = () => {
                 <Divider />
                 <ListItem>
                     <ListItemAvatar> 
-                        <Avatar variant="rounded" alt="Marcel" src={pixel5a} />
+                        <Avatar variant="rounded" alt="Marcel" src={marcel} />
                     </ListItemAvatar>
                     <ListItemTextExtended primary="Marcel" secondary="Her's"/>
                     <ListItemSecondaryActionExtended>
@@ -83,7 +87,7 @@ const ListItemsScreen = () => {
                 <Divider />
                 <ListItemButton>
                     <ListItemAvatar>
-                        <Avatar alt="Jessica Okoye" src={pixel5a}/>
+                        <Avatar alt="Jessica Okoye" src={jessica}/>
                     </ListItemAvatar>
                     <ListItemTextExtended primary="Jessica Okoye" secondary="j.okoye@microck.com" />
                 </ListItemButton>
@@ -152,7 +156,7 @@ const ListItemsScreen = () => {
                 <Divider/>
                 <ListItem>
                     <ListItemAvatar>
-                        <Avatar alt="Movie" src={pixel5a}/>
+                        <Avatar variant="rounded" alt="Movie" src={chernobyl}/>
                     </ListItemAvatar>
                     <ListItemTextExtended primary="Chernobyl" secondary="$24.99" />
                     <ListItemSecondaryActionExtended>
