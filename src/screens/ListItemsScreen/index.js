@@ -36,6 +36,7 @@ import { useTheme } from '@mui/material/styles';
 import pixel5a from '../../assets/pixel5a.jpg'
 import marcel from '../../assets/marcel.jpg'
 import jessica from '../../assets/jessica.jpg'
+import franklin from '../../assets/franklin.jpg'
 import chernobyl from '../../assets/chernobyl.jpg'
 
 
@@ -136,7 +137,7 @@ const ListItemsScreen = () => {
                 <Divider />
                 <ListItem>
                     <ListItemAvatar>
-                        <Avatar alt="Franklin" src={jessica}/>
+                        <Avatar alt="Franklin" src={franklin}/>
                     </ListItemAvatar>
                     <ListItemTextExtended 
                         overline="manager" 
@@ -206,7 +207,7 @@ const ListItemsScreen = () => {
                     </ListItemIcon>
                     <ListItemTextExtended primary="Display" secondary="Styles, Wallpapers, Fonts"/>
                     <ListItemSecondaryActionExtended>
-                        <IconButton>
+                        <IconButton disableRipple disableFocusRipple >
                             <ChevronRight/>
                         </IconButton>
                     </ListItemSecondaryActionExtended>
